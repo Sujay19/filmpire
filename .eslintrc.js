@@ -9,9 +9,14 @@ module.exports = {
   ],
   overrides: [
   ],
+  parser: '@babel/eslint-parser',
   parserOptions: {
+    requireConfigFile: false,
     ecmaVersion: 'latest',
     sourceType: 'module',
+    ecmaFeatures: {
+      modules: true,
+    },
   },
   plugins: [
     'react',
